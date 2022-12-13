@@ -42,6 +42,4 @@ describe('Inbox contract', () => {
 })
 
 
-//https://goerli.infura.io/v3/2f54a2d57a38408fbe1e5574f7ebd13f  
-
 

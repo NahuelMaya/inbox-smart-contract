@@ -4,11 +4,11 @@ const {abi, evm} = require('./compile');
 require('dotenv').config()
 
 const METAMASK_SEED = process.env.METAMASK_SEED
-
+const INFURA_GOERLI_KEY = process.env.INFURA_GOERLI_KEY;
 
 const provider = new HDWalletProvider(
     METAMASK_SEED,
-    'https://goerli.infura.io/v3/2f54a2d57a38408fbe1e5574f7ebd13f'
+    `https://goerli.infura.io/v3/${INFURA_GOERLI_KEY}`
 );
 
 const web3 = new Web3(provider)
